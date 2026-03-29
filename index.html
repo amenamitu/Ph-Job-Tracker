@@ -6,11 +6,11 @@
 
   <!-- Font Awesome -->
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
-
+<!-- css link -->
   <link rel="stylesheet" href="style.css">
 </head>
 <body>
-
+<!-- Header section -->
 <header>
 
 <h1>Job Application Tracker</h1>
@@ -31,7 +31,7 @@
     </div>
   </div>
 </header>
-
+<!-- Main section -->
 <section class="main">
 
   <div class="title">
@@ -45,9 +45,10 @@
     <button id="tab-rejected" onclick="switchTab('rejected')" class="inactive-tab tab" >Rejected</button>
   </div>
 
- 
+ <!-- jobs section -->
 
   <div id="job-container" class="jobs">
+    <!-- All container -->
 <section id="all-container" class="hidden">
      <div class="job-card">
       <div class="card-top">
@@ -186,15 +187,19 @@
       </div>
 
 </section>
+<!-- Interview section -->
  <section class="hidden" id="interview-container">Interview Section</section>
+ <!-- Rejected section -->
   <section class="hidden" id="rejected-container">Rejected Section</section>
   </div>
+  <!-- Empty-state -->
 <div id="empty-state" class="hidden">
 <img src="jobs.png" alt="">
 <p>No jobs Available</p>
 <p>No jobs found in this section</p>
 </div>
 </section>
+<!-- java script link -->
 <script src="script.js"></script>
 </body>
 </html>
