@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Job Application Dashboard</title>
+
+  <!-- Font Awesome -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<header>
+
+<h1>Job Application Tracker</h1>
+  <div class="stats">
+    <div class="card">
+      <p>All</p>
+      <p id="all-count">0</p>
+    </div>
+
+    <div class="card">
+      <p>Interview</p>
+      <p id="interview-count">0</p>
+    </div>
+
+    <div class="card">
+      <p>Rejected</p>
+      <p id="rejected-count">0</p>
+    </div>
+  </div>
+</header>
+
+<section class="main">
+
+  <div class="title">
+    <h2>Available Jobs</h2>
+    <span>Total: <b id="tab-count">8</b></span>
+  </div>
+
+  <div class="tabs">
+    <button id="tab-all" onclick="switchTab('all')" class="active-tab tab" >All</button>
+    <button id="tab-interview" onclick="switchTab('interview')" class="inactive-tab tab" >Interview</button>
+    <button id="tab-rejected" onclick="switchTab('rejected')" class="inactive-tab tab" >Rejected</button>
+  </div>
+
+ 
+
+  <div id="job-container" class="jobs">
+<section id="all-container" class="hidden">
+     <div class="job-card">
+      <div class="card-top">
+        <h3>Mobile First Corp</h3>
+        <p>React Native Developer</p>
+        <p>Remote . Full-time . $130,000 - $175,000</p>
+        <button class="staus">Not Applied</button>
+        <p>Build cross-platform mobile applications using React Native. Work on products used by millions of users worldwide.</p>
+        <div class="buttons">
+        <button class="interview">Interview</button>
+        <button class="rejected">Rejected</button>
+        </div>
+      <div class="delete">
+        <i class="fa-solid fa-trash delete-icon"></i>
+      </div>
+      </div>
+      </div>
+
+        <div class="job-card">
+      <div class="card-top">
+        <h3>Mobile First Corp</h3>
+        <p>React Native Developer</p>
+        <p>Remote . Full-time . $130,000 - $175,000</p>
+        <button class="staus">Not Applied</button>
+        <p>Build cross-platform mobile applications using React Native. Work on products used by millions of users worldwide.</p>
+        <div class="buttons">
+        <button class="interview">Interview</button>
+        <button class="rejected">Rejected</button>
+        </div>
+      <div class="delete">
+        <i class="fa-solid fa-trash delete-icon"></i>
+      </div>
+      </div>
+      </div>
+
+        <div class="job-card">
+      <div class="card-top">
+        <h3>Mobile First Corp</h3>
+        <p>React Native Developer</p>
+        <p>Remote . Full-time . $130,000 - $175,000</p>
+        <button class="staus">Not Applied</button>
+        <p>Build cross-platform mobile applications using React Native. Work on products used by millions of users worldwide.</p>
+        <div class="buttons">
+        <button class="interview">Interview</button>
+        <button class="rejected">Rejected</button>
+        </div>
+      <div class="delete">
+        <i class="fa-solid fa-trash delete delete-icon"></i>
+      </div>
+     </div> 
+      </div>
+</section>
+ <section class="hidden" id="interview-container">Interview Section</section>
+  <section class="hidden" id="rejected-container">Rejected Section</section>
+  </div>
+<div id="empty-state" class="hidden">
+<img src="jobs.png" alt="">
+<p>No jobs Available</p>
+<p>No jobs found in this section</p>
+</div>
+</section>
+<script src="script.js"></script>
+</body>
+</html>

@@ -1,0 +1,138 @@
+body {
+  font-family: Arial, sans-serif;
+  margin: 0;
+}
+
+
+.stats {
+  display: grid;
+   grid-template-columns: repeat(3, 1fr); 
+  gap: 15px;
+}
+
+.card {
+  padding: 10px 20px;
+  border-radius: 8px;
+  text-align: center;
+  background-color:whitesmoke;
+}
+
+/* .blue { background: #dbeafe; }
+.green { background: #d1fae5; }
+.red { background: #fee2e2; } */
+
+.main {
+  padding: 20px;
+}
+
+.title {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 10px;
+}
+
+.tabs {
+  margin-bottom: 20px;
+}
+
+.tab {
+  padding: 5px 15px;
+  cursor: pointer;
+  border-radius: 5px;
+}
+
+/* .tab.active {
+  background: #3b82f6;
+  color: white;
+} */
+ .active-tab {
+  background-color: navy;
+  color: white;
+  border: 2px solid navy;
+
+}
+
+.inactive-tab {
+  background-color: transparent;
+  color: #334155;
+  border: 2px solid #e2e8f0;
+   
+}
+
+.jobs {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 15px;
+} 
+
+.job-card {
+  background: whitesmoke;
+  padding: 15px;
+  border-radius: 8px;
+  position: relative;
+  margin-bottom: 10px;
+}
+
+.job-card h3 {
+  margin: 0 0 5px;
+}
+
+.buttons {
+  margin-top: 10px;
+}
+
+.buttons button {
+  padding: 5px 10px;
+  margin-right: 5px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+button.interview {
+  background: transparent;
+  color: #22c55e; 
+  border: 2px solid #22c55e;                 
+  padding: 8px 12px;
+  border-radius: 6px;
+ }
+ button.rejected { 
+  background: transparent;
+    color: #ef4444;
+  border: 2px solid #ef4444;                 
+  padding: 8px 12px;
+  border-radius: 6px;
+
+}
+button.interview:hover{
+  background-color: #22c55e;
+  color: white;
+}
+button.rejected:hover{
+  background-color: #ef4444;
+  color: white;
+}
+
+/* Delete Icon Style */
+.delete-icon {
+  background-color: #ef4444;
+  padding: 10px;
+  border-radius: 50%;
+  position: absolute;
+  top: 10px;
+  right: 10px;
+  cursor: pointer;
+  font-size: 18px;
+  transition: 0.3s;
+}
+
+
+
+ #empty-state {
+  text-align: center;
+  color: gray;
+  grid-column: 1 / -1;
+} 
+.hidden{
+  display: none;
+}
