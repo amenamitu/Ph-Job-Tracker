@@ -17,9 +17,6 @@ body {
   background-color:whitesmoke;
 }
 
-/* .blue { background: #dbeafe; }
-.green { background: #d1fae5; }
-.red { background: #fee2e2; } */
 
 .main {
   padding: 20px;
@@ -30,7 +27,7 @@ body {
   justify-content: space-between;
   margin-bottom: 10px;
 }
-
+/* Tabs style */
 .tabs {
   margin-bottom: 20px;
 }
@@ -41,10 +38,6 @@ body {
   border-radius: 5px;
 }
 
-/* .tab.active {
-  background: #3b82f6;
-  color: white;
-} */
  .active-tab {
   background-color: navy;
   color: white;
@@ -58,7 +51,7 @@ body {
   border: 2px solid #e2e8f0;
    
 }
-
+/*Jobs section style */
 .jobs {
   display: grid;
   grid-template-columns: 1fr;
@@ -76,7 +69,7 @@ body {
 .job-card h3 {
   margin: 0 0 5px;
 }
-
+/* Buttons style */
 .buttons {
   margin-top: 10px;
 }
@@ -126,12 +119,12 @@ button.rejected:hover{
   transition: 0.3s;
 }
 
-
+/* Empty-state */
 
  #empty-state {
   text-align: center;
   color: gray;
-  grid-column: 1 / -1;
+
 } 
 .hidden{
   display: none;
