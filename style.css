@@ -1,9 +1,13 @@
 body {
-  font-family: Arial, sans-serif;
+  font-family: "DM Sans", sans-serif;
   margin: 0;
 }
-
-
+h1,h2,h3{
+  color: #334155;
+}
+p{
+  color:rgb(120, 118, 118);
+}
 .stats {
   display: grid;
    grid-template-columns: repeat(3, 1fr); 
